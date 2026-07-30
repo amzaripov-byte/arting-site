@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>АРТ-Инжиниринг — поставки, производство, строительство | Уфа | arting.su</title>
+<meta name="description" content="ООО «АРТ-Инжиниринг», Уфа: комплексные поставки, быстровозводимые модульные здания, металлоконструкции, благоустройство территорий, системы безопасности. Более 1000 государственных контрактов по 44-ФЗ и 223-ФЗ. Работаем по Республике Башкортостан и другим регионам России.">
+<meta name="keywords" content="модульные здания Уфа, металлоконструкции Уфа, благоустройство территорий, госконтракты 44-ФЗ, комплексные поставки, АРТ-Инжиниринг, arting.su">
+<meta property="og:title" content="АРТ-Инжиниринг — Поставляем. Производим. Строим.">
+<meta property="og:description" content="От винтика и болтика до готового объекта. Более 1000 государственных контрактов по 44-ФЗ и 223-ФЗ.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arting.su">
+<meta property="og:locale" content="ru_RU">
+<link rel="canonical" href="https://arting.su">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ООО «АРТ-Инжиниринг»",
+  "url": "https://arting.su",
+  "telephone": "+79177956789",
+  "address": {"@type": "PostalAddress", "addressLocality": "Уфа", "addressRegion": "Республика Башкортостан", "addressCountry": "RU"},
+  "areaServed": "Россия",
+  "description": "Комплексные поставки, производство металлоконструкций, строительство модульных зданий, благоустройство территорий, системы безопасности. Более 1000 государственных контрактов."
+}
+</script>
+<style>
+:root{
+  --steel-900:#141A22;
+  --steel-700:#243040;
+  --steel-500:#4A5A6E;
+  --paper:#EDF0F3;
+  --paper-2:#E2E7EC;
+  --line:#C3CCD5;
+  --orange:#F2610D;
+  --orange-dark:#D14F04;
+  --white:#FFFFFF;
+  --mono:'JetBrains Mono',monospace;
+  --disp:'Unbounded',sans-serif;
+  --body:'Manrope',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--paper);color:var(--steel-900);line-height:1.6;overflow-x:hidden}
+
+.grid-bg{position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:
+    linear-gradient(var(--line) 1px,transparent 1px),
+    linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:56px 56px;opacity:.35}
+
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--steel-500);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--orange)}
+.section{padding:104px 0}
+h2{font-family:var(--disp);font-weight:700;font-size:clamp(26px,4vw,44px);line-height:1.15;margin:14px 0 18px}
+.lead{font-size:18px;color:var(--steel-700);max-width:660px}
+a{color:inherit}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:16px 28px;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-orange{background:var(--orange);color:var(--white)}
+.btn-orange:hover{background:var(--orange-dark);transform:translateY(-2px);box-shadow:0 10px 24px rgba(242,97,13,.35)}
+.btn-ghost{background:transparent;color:var(--steel-900);border:1px solid var(--steel-900)}
+.btn-ghost:hover{background:var(--steel-900);color:var(--white)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+
+/* шапка */
+header{position:sticky;top:0;z-index:50;background:rgba(237,240,243,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:44px;width:auto;display:block}
+.logo-mark{width:30px;height:30px;background:var(--orange);clip-path:polygon(0 100%,0 35%,35% 0,100% 0,100% 65%,65% 100%);flex-shrink:0}
+.logo-text{font-family:var(--disp);font-weight:800;font-size:16px;letter-spacing:.02em;white-space:nowrap}
+.logo-text span{color:var(--orange)}
+nav ul{display:flex;gap:26px;list-style:none}
+nav a{font-size:14.5px;font-weight:600;text-decoration:none;color:var(--steel-700);transition:color .2s;white-space:nowrap}
+nav a:hover{color:var(--orange)}
+.nav-phone{font-family:var(--mono);font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap}
+.burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2px;background:var(--steel-900);margin:5px 0;transition:.3s}
+
+/* герой */
+.hero{padding:92px 0 72px;position:relative}
+.hero h1{font-family:var(--disp);font-weight:800;font-size:clamp(32px,6vw,74px);line-height:1.06;letter-spacing:-.01em;max-width:1020px}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero .slogan{margin-top:22px;font-family:var(--mono);font-size:clamp(13px,1.5vw,16px);letter-spacing:.08em;text-transform:uppercase;color:var(--steel-500)}
+.hero .lead{margin-top:20px;font-size:clamp(16px,1.6vw,19px)}
+.hero-cta{margin-top:38px;display:flex;gap:16px;flex-wrap:wrap}
+.dim{margin-top:60px;position:relative;height:52px}
+.dim-line{position:absolute;left:0;right:0;top:14px;height:1px;background:var(--steel-900)}
+.dim-line::before,.dim-line::after{content:"";position:absolute;top:-6px;width:1px;height:13px;background:var(--steel-900)}
+.dim-line::before{left:0}.dim-line::after{right:0}
+.dim-arrow-l,.dim-arrow-r{position:absolute;top:10.5px;width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent}
+.dim-arrow-l{left:1px;border-right:9px solid var(--steel-900)}
+.dim-arrow-r{right:1px;border-left:9px solid var(--steel-900)}
+.dim-label{position:absolute;top:24px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--steel-500);background:var(--paper);padding:0 14px;white-space:nowrap;max-width:92%;overflow:hidden;text-overflow:ellipsis}
+
+/* бегущая строка */
+.marquee{background:var(--steel-900);color:var(--paper);overflow:hidden;padding:16px 0;border-top:3px solid var(--orange)}
+.marquee-track{display:flex;width:max-content;animation:scroll 30s linear infinite}
+.marquee-item{font-family:var(--mono);font-size:14px;letter-spacing:.12em;text-transform:uppercase;padding:0 28px;white-space:nowrap;display:flex;align-items:center;gap:28px}
+.marquee-item::after{content:"▪";color:var(--orange);font-size:10px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* показатели */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--steel-900);background:var(--white)}
+.stat{padding:36px 32px;border-right:1px solid var(--steel-900);position:relative}
+.stat:last-child{border-right:none}
+.stat-num{font-family:var(--disp);font-weight:800;font-size:clamp(34px,4vw,54px);line-height:1;color:var(--steel-900)}
+.stat-num b{color:var(--orange);font-weight:800}
+.stat-cap{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel-500);margin-top:12px}
+.stat-code{position:absolute;top:12px;right:14px;font-family:var(--mono);font-size:11px;color:var(--line)}
+
+/* о компании */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.about-text p{margin-bottom:16px;color:var(--steel-700);font-size:16.5px}
+.about-text b{color:var(--steel-900)}
+.about-card{background:var(--steel-900);color:var(--paper);padding:40px;position:relative}
+.about-card::before{content:"АИ / О КОМПАНИИ";position:absolute;top:14px;right:18px;font-family:var(--mono);font-size:11px;color:#4A5A6E}
+.about-card h3{font-family:var(--disp);font-weight:700;font-size:20px;color:var(--white);margin-bottom:20px}
+.about-card ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+.about-card li{display:flex;gap:14px;font-size:15px;color:#B8C4D0}
+.about-card li::before{content:"—";color:var(--orange);flex-shrink:0}
+
+/* направления */
+.dir-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.dir-card{background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s;position:relative}
+.dir-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(20,26,34,.12);border-color:var(--steel-900)}
+.dir-head{padding:26px 26px 0;display:flex;justify-content:space-between;align-items:flex-start}
+.dir-code{font-family:var(--mono);font-size:12px;color:var(--steel-500);letter-spacing:.08em}
+.dir-icon{width:54px;height:54px;flex-shrink:0}
+.dir-icon svg{width:100%;height:100%;stroke:var(--orange);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dir-card h3{font-family:var(--disp);font-weight:700;font-size:19px;line-height:1.25;padding:18px 26px 0}
+.dir-card p{padding:12px 26px 0;color:var(--steel-700);font-size:14.5px;flex-grow:1}
+.dir-spec{margin:20px 26px 24px;border-top:1px dashed var(--line);padding-top:14px;font-family:var(--mono);font-size:12px;color:var(--steel-500);line-height:1.8}
+
+/* преимущества */
+.adv-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:48px}
+.adv{background:var(--white);padding:26px 22px;transition:background .25s}
+.adv:hover{background:var(--paper-2)}
+.adv-num{font-family:var(--mono);font-size:12px;color:var(--orange);letter-spacing:.08em}
+.adv h4{font-family:var(--disp);font-weight:700;font-size:14.5px;line-height:1.35;margin:12px 0 8px}
+.adv p{font-size:13px;color:var(--steel-500);line-height:1.5}
+
+/* процесс */
+.dark{background:var(--steel-900);color:var(--paper)}
+.dark .eyebrow{color:#8DA0B5}
+.dark h2{color:var(--white)}
+.dark .lead{color:#B8C4D0}
+.proc{display:grid;grid-template-columns:repeat(5,1fr);margin-top:56px;counter-reset:step}
+.proc-step{border-left:1px solid #3A4658;padding:8px 22px 0;position:relative}
+.proc-step::before{counter-increment:step;content:"0" counter(step);font-family:var(--mono);font-size:13px;color:var(--orange);letter-spacing:.1em}
+.proc-step h4{font-family:var(--disp);font-weight:700;font-size:16px;margin:14px 0 10px;color:var(--white)}
+.proc-step p{font-size:13.5px;color:#9FAEBE;line-height:1.55}
+.proc-step::after{content:"";position:absolute;left:-4.5px;top:0;width:8px;height:8px;background:var(--orange)}
+.bolt-note{margin-top:64px;display:flex;align-items:center;gap:20px;border:1px dashed #3A4658;padding:24px 28px}
+.bolt-note svg{width:44px;height:44px;flex-shrink:0;stroke:var(--orange);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.bolt-note p{font-size:16px;color:var(--paper)}
+.bolt-note b{color:var(--orange)}
+
+/* типовые проекты */
+.proj-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:48px}
+.proj{background:var(--white);border:1px solid var(--line);padding:22px 20px;transition:border-color .25s,transform .25s;display:flex;flex-direction:column;gap:10px}
+.proj:hover{border-color:var(--orange);transform:translateY(-4px)}
+.proj-code{font-family:var(--mono);font-size:11px;color:var(--steel-500);letter-spacing:.08em}
+.proj h4{font-family:var(--body);font-weight:700;font-size:15px;line-height:1.35}
+.proj-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin-top:auto}
+
+/* госзаказ */
+.gov{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start}
+.gov-list{list-style:none;margin-top:8px}
+.gov-list li{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.gov-list li:first-child{border-top:1px solid var(--line)}
+.gov-check{font-family:var(--mono);font-weight:700;color:var(--orange);font-size:15px;flex-shrink:0;margin-top:2px}
+.gov-list b{display:block;font-size:16.5px;margin-bottom:4px}
+.gov-list span{font-size:14.5px;color:var(--steel-700)}
+.gov-big{background:var(--steel-900);color:var(--white);padding:44px 40px;position:sticky;top:100px}
+.gov-big .n{font-family:var(--disp);font-weight:800;font-size:clamp(56px,6vw,86px);line-height:1;color:var(--orange)}
+.gov-big .t{font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-top:16px;color:#B8C4D0}
+.gov-big hr{border:none;border-top:1px dashed #3A4658;margin:28px 0}
+.gov-big p{font-size:15px;color:#CBD5DF}
+
+/* форма */
+.form-sec{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.form-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.form-info p{color:var(--steel-700);font-size:16px;margin-bottom:20px}
+.form-contacts{display:flex;flex-direction:column;gap:12px;margin-top:28px}
+.contact-btn{display:inline-flex;align-items:center;gap:12px;text-decoration:none;font-weight:700;font-size:16px;padding:14px 20px;border:1px solid var(--steel-900);background:var(--white);transition:transform .2s,box-shadow .2s;width:fit-content}
+.contact-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(20,26,34,.12)}
+.contact-btn svg{width:22px;height:22px;flex-shrink:0}
+.contact-btn.wa svg{fill:#25D366}
+.contact-btn.tg svg{fill:#229ED9}
+.contact-btn.ph svg{fill:var(--orange)}
+form{background:var(--white);border:1px solid var(--steel-900);padding:36px}
+.form-title{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--steel-500);margin-bottom:24px;display:flex;justify-content:space-between}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:13.5px;font-weight:600;margin-bottom:7px}
+.field input,.field textarea{width:100%;border:1px solid var(--line);background:var(--paper);padding:13px 15px;font-family:var(--body);font-size:15px;transition:border-color .2s}
+.field input:focus,.field textarea:focus{border-color:var(--orange)}
+.field textarea{resize:vertical;min-height:110px}
+.file-field{border:1px dashed var(--steel-500);background:var(--paper);padding:18px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;font-size:14px;color:var(--steel-500)}
+.file-field:hover{border-color:var(--orange);background:var(--white)}
+.file-field input{display:none}
+.file-field b{color:var(--orange)}
+.file-list{font-family:var(--mono);font-size:12px;color:var(--steel-700);margin-top:10px;text-align:left}
+form .btn{width:100%;justify-content:center;margin-top:8px}
+.form-note{font-size:12.5px;color:var(--steel-500);margin-top:14px;text-align:center}
+
+/* контакты и подвал */
+footer{background:var(--steel-900);color:#9FAEBE;padding:72px 0 40px}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1.1fr;gap:48px}
+.foot h5{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#697B8F;margin-bottom:18px}
+.foot a{text-decoration:none;transition:color .2s}
+.foot a:hover{color:var(--orange)}
+.foot li{list-style:none;margin-bottom:11px;font-size:15px}
+.foot-logo{font-family:var(--disp);font-weight:800;font-size:18px;color:var(--white)}
+.foot-logo span{color:var(--orange)}
+.foot-logo-img{height:48px;width:auto;margin-bottom:16px;display:block}
+.foot-bottom{border-top:1px solid #2A3545;margin-top:48px;padding-top:24px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;color:#5B6C80;flex-wrap:wrap;gap:12px}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .marquee-track{animation:none}
+  html{scroll-behavior:auto}
+}
+
+/* адаптив */
+@media (max-width:1060px){
+  nav ul{gap:18px}
+  nav a{font-size:13.5px}
+}
+@media (max-width:960px){
+  .dir-grid{grid-template-columns:1fr 1fr}
+  .adv-grid{grid-template-columns:1fr 1fr}
+  .proc{grid-template-columns:1fr;gap:32px}
+  .proc-step{border-left:none;border-top:1px solid #3A4658;padding:20px 0 0}
+  .proc-step::after{left:0;top:-4.5px}
+  .gov,.about,.form-grid{grid-template-columns:1fr}
+  .gov-big{position:static}
+  .proj-grid{grid-template-columns:1fr 1fr 1fr}
+  .foot{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  nav ul{position:fixed;inset:72px 0 auto 0;background:var(--paper);flex-direction:column;gap:0;padding:12px 24px 24px;border-bottom:1px solid var(--line);display:none}
+  nav ul.open{display:flex}
+  nav li{padding:12px 0;border-bottom:1px solid var(--line)}
+  nav a{font-size:16px}
+  .burger{display:block}
+  .nav-phone{display:none}
+  .dir-grid,.stats,.proj-grid{grid-template-columns:1fr}
+  .adv-grid{grid-template-columns:1fr}
+  .stat{border-right:none;border-bottom:1px solid var(--steel-900)}
+  .stat:last-child{border-bottom:none}
+  .section{padding:72px 0}
+  form{padding:26px 20px}
+}
+</style>
+</head>
+<body>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="АРТ-Инжиниринг — на главную">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK8AAAB4CAQAAAAuoGppAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAACYktHRAD/h4/MvwAAAAlwSFlzAAAh1QAAIdUBBJy0nQAAAAd0SU1FB+oHHhIXN9txOH8AACYeSURBVHja7V13XFTH9v/OvVvYXWAXWIoISBUQpCgqiLEXbDEaE2N/mmg0zRhTfYkpvhhTjL5EEzXPJBpN0ZgYNZpYoyZqxN5BVFBBOgtb2Hrn98cC22EFfJhf3rkfPh/u3JkzM98798yZM2fOAneVes720TKU1F08GnHk/uC7W+O9RWxLGeSBgS86IAWXnDyteFadSkHr7jiofW5v0Rba58rGLXREAh7Hr22NRysT05LCIzAW0UjwkPcJHMGTLHOSQwMLuABgRLWTXGlEFtdunDhkLgbjHZv8f1t6HSMgwSO+w6d2/FlaJa1NW3ZI6CTbelCbS4Ue9lnWoVds8HmpUX6u59IHU2v4IZj5P4gpmRyT8KzvQU+DWbb6Fo2J/94uz8fAVw7wdlc6cIpdyKOEEiqg0qLEjVkj53sGtnX32pYUGD0hKE9gBZyAy5hf//QM5mIexoDyPX8ilFjlYjQRg73xMgZhY90IpRgm9z1hyUOopzr5+7fatXUPW4eaK3sFZ0eXRhmsEvTkxv3v+GXiAciRjGSxMUjSq9e77ADbYkRE3u453tTJx/MhAUE0JsMTplG1SZYcFCpxwajS9LYGpnWINK+YgkldfOMFzkZGSnTRj4u3Rkbpe+dE6FKLZbzwGokRsMlDQCAySsqN+eGl9E/Bn9E5t5mrX9zsz9nkERcmDTxyua2haUNS4P4BMjWxkauECqsEJ30qRJShcOPiUXGtV44ohzXapjM06vtFgrbuYRvTEs/wXYwdvLZytrmXh7bLaNrMr+peo2brvRdV4T8JjNYp1E7HbS55X8w4/P9FM2sSXoo56IYv7VJVKIEmm1Y3Vbo5JCuYXrXCoRWzkYlNbQRS86kJeCl6QypjgwYIHrNKfQWeiEioedfg614lpO5yj4oHzJ8VJ37AagBTEHj58IPG8j5oa7zukBrt829YAXnKwWWFIZ029Vko0LwJYBE+wMfiz8dfebkw2uSCHQEBH6RapA7WFZz30PtAAAoVqsB4+XS6zWPlOh4HDgBxKgW8teGbu7zz5YXPMQ0EJgRjdMaBJaX+qWvnvK/VPdTWmLUOXcQ0vJqScJJHCZUYMt5bLfkIP0OIMVGJGzx1zqclQoVUfEu2NfWj5KmDM/pFbA/dys9haN21iNkmejM8IWbYmKTnor72zBareE4mQ7NtLSh3wGMHJDOQjY54OSPuIksJlWmHLcgTbm1rYFqHArEkJfUkj4ISCuql7//eKbFGOPgB/2zWhaLlfSt6c/cZGXGPCYBI9MAA7MTP+BE/4Ef8iB/wA3bhY8SgNwBKevllDEhZHJztoWacAAzqpe3x+awwShZldL7I1rXCT/vwglvC39oaGrfJpXBIwsCI/RvOZViUA6mh3ZeQlIyo9uasipsZ8A3BOUGbBBtXXovXd0UkErEABJRsD9R6WusTHlxEYZIO2IbPUAU1TuIJ3/M9tY9d6VnjzzkICj5CLoQdKc28Em9saKy/bsiij96fX/tpWyPXMor2CdnMcsRmTDGUcdBtCRXq2h2In/RCEJCJz2x4PCrP2J9YnFicWJxQnFCcUJxYnHJ9YOZPVjkopsMLRaKs1I7LZIXOBAVLmYZlCqEMJTRIO/SxuL+6Xpw+kW9saplAKI+2z4mdPsXHC085jL1fMXi0h9a+RPLyQgcT/hZkgjIZyTFfeavQ5OKE0MDfV0vbGp8WUkaWV23jHWWolyLqwymRwGinHP7gpX7tKFXbXX60vbPc85GGveKM+0OO8ZsAmKWhPy31aGt8WkhzRTGv248924lMnp15/1neOJxywWFSpH++48gT6dLGPOqixFIA00JiPvRUk0bGrs/JzNS//KL5CQwWtnudr2WcGGgIFRrDvprUUYZ5Lss/jrjJQqOzMR+w5m2+q1Iq9MdnvN7TvK4wTlU2hkrPxKV0/P+wZu6JFKHfG3ydI7zetX2WPuTZHasaKb1JErvT+Rj0uz2hU34jJScgDmN6d7rIOoE34PqYQVEY29bQtA7FYXCE1GE+F5ZETjshbtzercb9XXwqnH/eAlPyrJ6NlvYF8Gicz2Z7gFma/G9KQtsaltajwaO99LZd9CwJGwesbaIcZTq/wndh9yU0bPen3o2XL8YMdAkK/t52VUdo+K5nRD+3NSitQyvRw9dvt+0sLizpMI6SzCbLLpXHnCIuzeq+NQ/1OtEkjwT0CvL7nuGs5bZAmT7rLz+tmelnQfxixmg9dnwMA148T0Y1WfJDZA321DSmdSS85Q5IaYgKCj1gO4L9bozuOq/povce7cJ6/GZ1/+ADPjU2MlPf7cM/vZoeucCHJHJJ4xtCkRc+dMsZSoQ5mcGXrb8ghkZteVdWvylNsQ3ftjVw7tBoUN53QZQfg4+wDs9gqm/UH9ajhqXt12d4uteVJzv4X0Kj8Ep0g0e7w0mN7kgZKLOZJCX6rlMpKG7jHwD2+f7sI0VtW8PXOFFkCcKfT8xJWdu791feANDhcX7DpEYoodLsoTHd3OL1DPpPkhgbh5fQqFXH3NqIOgEjL+F5od4yggkNuvBQdAIo82hE96eSj6cenTf8HpfHlAzsJ1GAstSrOn5/2pSkpz1LbHRV7cjxU93ktUwQuqHpvWKf3H9EmNzitxMveof/wDbAy1AelW/pObLL0uBrAhOhDM04tNfbLVZtRb+zqWstWqbAIDBZxhkon/b8ao/EPcekg3gqNbDMfqUWcVtgt8AWcf1mudu6iRicKs238fahQq2lvX7VD2ZccpfZf59q8GSco33AIhiCch+L/85tKDLmCTnbpYiw9sEFoTft+UZsWS50kyko6fqa0OSqhSxNXKRusSvtXaSecz1cSkmBLnKa+7JtpU/YAXse0jMzgmO+YOyWCJ5FafHlbnJdg/EBvodcD4B2FycFtTWGLmmFb+RhVzKSofKDQ2QH3OR0AVMH+Wnsu99hGSU9HhTpbFP5XNo/3W8jH10miXSuTJUe+t7TprQ1jE6IAYCfu5Ynu+yW3mfVOUUfN9l1ZM4NqRbZpgm18l/30aQ/vfJt003k9rBn3J6SNqDbzz5HbT3WLKTjXxspvwdtwAwA8MOpGC58EdrnjdpT5Da7R31v9TfapXnmdjoxALNv+x+01sQoKKo6H076xk3OD2NVVcoWiQtLJIUwSnKvwpu2L2y7l5Z1Ai6fhnz7fpm7zKZAOUjdyTaNB7/9y8qA90ztfxHpbSGp9bqR1cttN6ybyNzqm+eYTuAB/4LolU+q2hhLV/QUFnjfPzpyjW8J306m+RU+HHvBbT7Z/KT1rJ109KodNHQjAOD5kPY59jIz4NL0OzgpRJlu79u3UGyUH+n24sR4Stz/xv7LRPEMuoCyk7p32WptY2Vp8ub9bruCUkzr6JtvP621P/OSv/n5bV6Pz+zdRjz0CQ987nY7z2JspleFNXf/suFPTJADQ/F8W4PYFL2GoejYj7Wa9yXc6Bkb3C5PyfB5HpwtvDyauqxeqfsBI0ZJ1PZb+6EbvnNb+wWeFAf+aq3VeP9AmYcw330GbUkU8cNZq9VV0K3nYt3f1Vojjttl//HLah/O2teQY6Qs8IS9YuV3e1z8HbSQtH+OsVpRev+86B6c0CxkO7EQfjqElke+pydcd3c9UYSNHYu72KdKc7qe6N9w94Mq7pTt4opAGXi+r/vNPUQ7HBVr6u8oeJ2P39OHXGzg3SnkeljMLDwEHutqcJdRO0b5oNrOIZWB6bsXrRZmxcbgrSKNbR4D0Y1f4bZTSG/EXxEXWF65Iag2sW0BbJxs4F0jzJdZ7vg67xNwWzYs8rk93Gg31D2qAnafs+IQCvaAx1nrHBQUpSnbE991u8EzVf43LHe1/JKotoSvKbKBVxvOs2osv1h93l3RsBK/dSm3k9MEnqe6XUqySVte47fH3vai9ro2yH2n0u5acszCgYMmeY/TbrnTciESkYr5eN3hyUDw3SjvnGRW/HiW5CX4WKqymigMF3rc3uMmyz7s4iyN2NYZmoXvrlVq23zXafjuwjlKL+s0E8qH9lvxh7uLF6r+k+ghqIdXGeQrhsYhlweGE2njnx4BA08dTvNvvKlMRwaWWj/MwB1MuA5N/BP1i4V56I00pKEbgNgFfM4yKydvKXPTyEfxQnjwVXutwbMyM82xg2/KQo/aG2Yk+v4PLHe78dP7B1gZh+Q3R0emIQ1p6I5h+KoeOn84LGGc2do8OElp+wOJ8/qEAq9a1TFwBa/J0q4uGX3j2Xo+PElc8H1KIQFBlvTEDIPVN+WZL3dT8q7B4Z5VYfZjw+/UQ5ccP9EF1Su+ZbpxNkKplp+fRbbBvc0LdCwjVWiw7Ve1u/xe5G8EAAvpda99DdtubrSdQkuIv8a/tLf3Pzp/GLQxRX0a7pd2TVa9jjrtTSVUTMVURG23Lv1nuFvHAVH0Jnt9lk9TX3JmJb6OET1sd6BBQeUFT8S62/gkmfcZ26WLuf1i6qfsXOcfRfxx+c7GnEgb80l36fS6OgYtb8noffPZ+rYyBclKqKGBBrU2r4yPjsS9ia0E38Sp+tm/CnFl2F5nYyACw3L8LthzVoac69vPTXjHE9ttKWNd+zWo8Mzt7O5Lsqda4fXHixf7yN5oLgMrsnSbMcH5CQA+OrjJLIAc71fpZ58qPz3+kvPXM7s6ZLf9vKxj8rPuc3Nx3A8+Lp4QGJ1+cDwInFw8u1xGpnzm/qe6sgDAYwVulOHDeS6WWGp2IWZY+LsJ72zRrSH2qw8Bgn4dp3nEaX4Fjdt9/tlyL9vUqh6/dzx9LsWN+jrA1TqYOu2LB034VpJr/4SgHKogrndFnJbUP9Mw155euff5Ix+g0zZtidGBE0Fp6JUppjqMRcqEz0UKx/q80O6IFbzOibh+ZEOrsDu9NsM+VVoZv8/kQnT7YOFJ3kEMt03VtasZk3zenSnFPZ3WQnxOtuFPJ35/RtSSue3OzTj+RE1AfbXVAbkzZ5z8QHdlx+kdzhas6nQynvDMuYlSveTyTcc8MvSyaqsL4tz0fJlJrg3V2I1EBoFn7r/k+vVcVydl29s5jSgc9JxbW0Mad1UMS18YFRwvLbZQbdGehdLp/OL6nBRVwzfGAltRBWdlwFKrl2vgOctzy8qCx8DFcVQTitE0UTwXeGugwW7Q8UySTSM1rkt9DtGPHiX2qdWddyfsdqPOi1C7eOL8jCcF5yL/aKzESq5gR4cv+A1KjtIvL3NhI/21cHPN10KM2IXE0iOPNv2lvoSC/rUOs7VHocevhkYLZ+bKjtm/VJ23+sEwNxYyv6DCJbz+d+wMNRvptMdGaUV9cw2MpscE9+SiG8Skf93+ZmBJQElgibzCmqsRZR5NC7mu7OUsRwcOz8Njbja+yVGg9fuFb/MCKExQD1sU0HSTt1Nb7whPbUBJQElASWBJVPaDh+4cgj8xIVfeYF2hKAr7R4vCj1kTb9G0dcEVPAICVnZ0dV5qfZ8pEtOxoqmp5nh8xQD7T0RgbLfzGeOcRsutwCMHbpRU2Ll+KCKOpePHppo8ocPqIIvkERvT3gjaDAAsIhUL3fVLsaGh2rnZ6Fvfb0jHeh9qFh9HYrL1bD6bx+axeV8dj90kbICTIkfcVPyERbg4WBlsP8TFRWF/NK0BTLwakG1f0iDkJm1rUvs94quXWe7k+SM3mNvPy+PKVzVV2ClxXM5NS4PbR0a3WiBG3lMN/5qQdgi1ENffK/0veqKmscIyUe4QrU0KAYH88MgbTYvASq38F8EInU1GirL0z8INOY0ZA03oHqxu+HgJVCcm326ptzpDGMbyDRr1xO1NhCY5W/5l0b9GZqWNmWKPhTU2CI9gR3xpV2ojoCmExtCd091o3lQk/yZz0B5UgUVZvEbfDcPo0mnDJMEgsrL0TvU0J0xTk+srJcjP+fpGi7hZM7a+4efTa5Y7zpeX2tjklk5U4zR+9nqH9FbSQV80dfnAFx/ntjtqP4cYWcVD73ihEdoo5rpa8GShOtrS3SCKdVJFsqUX/voOxhawsyEbFWSS9qe8kgYXdC2jTMd610Xf9i0YaIB9nDJx3lYZTXCnU1Iac1kAvY32yKGk84HE7w+7Phi4K6DEavNSqIzLb2nAM4KRXSti63VmBh6n5hvevhvwLtPLLwhQ76lkwq2UzV6upG8upqWUObHo3+iJve51CjjLd4zhUOt9dWDWEVdT4348F6exmni8KwKvtqT7FF0gEp2eoZTUwysw+B+vbXq94CbZwHsfzp7ktPUWEwpF5wNJ9Hfn8sGHVzFaI7JPpTCKLZNjc8gI5YOvrabFzmsNYqoGaK1U6trzc9zQFiimgYNFsyUAKMoRhx6Ilvz+QulIi7jxuh59RN5a6FrgnQkFZkBOrV9ctdeBlFG/Oy/4Tohy+N05OK2KvZCJH5yP3yW+mv6WBwRCaaEgRdcVaxrhR4jAI1ZiOyAJKMTgpAHdjk8vz+IE9aksla1fcKupM6d3CO8PWIvVmB6ZMerCFGpl7dNDM3bcuq1OxMNsHOpZEXp34NUKaybmbIPe8UkGsrsqrXY1KJQ9Ji9ut6H96UjNJLzlih+T89a1uU7SoZUao1UCzmr+bn+12/o/Wk001JGGebJn5w/kOSKHjQ1pzfDMV52UeIEftK65myVNX8GFc5w6X+3mx611PHPkqZBviR69SG4N751vBoES6lkxbDJtfEGciQYfPFFhZIRb8I5MDSvgO62SoUFvH3ciBqck+xTfPXg9TOkzHffpfkZ6R+8C51EexPqkpa9arUaaA69HReDUXsyVxqG6Q3gZAKhOKQtzrupx0I5fEP2xXeoEnO+vdsP40lzSMbey3nSwWg1jaifXOok2QEGh4Vf1V0maXyMLr9yOczK/EnExrdoTBgDkJ8VlruSoJuLq5Ml2H0y4d9Fww108B0mhzLyUfM0m7VNMjSqZaCTO87MIPj/5jk++EgAELCSlwauix5xdf4Vzx958J8QAwJQc772uRI4BpZPGRK60SlmLq930GXcv3AoBgSYgd1iEDZSzyMkpleGuygiq+Z+V61zxk8HfySWqYUvkN+Q7o19PGbHsycoL83Cu1fvCA4BL2pgfy8aonJpoKaojip7p9EKVrmF/ljk/VGnj8ERAITb6HdRXOd8vaAJOoumpDLIOyAkYcHvQk0upsh5hGR5LK5qqdzp2CQD/02nHh7jgL6YjlieddlQHTubuKO5nzLr9qE6ELSjAklYHtw7el1G49/w5VVfnWTiUTH3jh32/NSQw0hqJQWFj1iLgHx7+8AdVvDveBwOqmQeWn3jcvlxV5/1J5A/z/8dx0OPLuUqXUV6ESNi1VL3MxVOGK/jFb4fjay8GwIMJb+ANnL4L0DbAS0Arj24v6WIi5iRZIcertPLVUHhff3XeueMVdYcHja9/+GpJ7pvVVjn4iDocUtEfBPQO93EpjnGpXwsm1NoZcoxSMoEeIRxAAfLK2GujrM1wfG1QcaVc42kGTXw1cNNh6roGhv23i2ffwN2DXy2ik5icFFbCp6LaDqdSXxwZ0yPF/xhL64+pEio0Jr32ElPvR7MOwMQHI65adFCf2olZDzazborHpP6HHdUt+YVRdSJjbEzwReufXhDqAuc9GzJgUOp3frcFVETTPlpvN3VYK2aexj4jWw2o5ui9AHBNMG5kr48yH3reHxiG7hgwQlJFGuAl1Lts5KhJDZ/+dFAytHPcQX7dc//9c2XNbzMlcW+yDvAKdemP9MY6pAlDP7f2+GJop30fSJ9GOGqFQxL7vNX7tZc62I/Oew7ew+gJwANP1E1Oz/ATvrA+JkVowKkJVqZVNbrhzbCQFSIjqID2Xjy+BW0+irG9ZNXEAeC4HzbwrwqTX+ZrLK8ZVFo2rO4z+gnmcxvPOXC85+C1p8fwQFxAjnWXeTRuT1/f+63yvICZkkHvelV7KoZnNLsiAMBSacRhx/WYrHBUdJ9H5BqLkGKo0BT7xmpeU/rJPQ8vQEnPqZ42QS4YY+gns6WzrfKMho7fZWL6+jktWDGZ60p/S+AAL8/YYaU4l1BreEN+m+z/apP8/gLw/oilotQNtucoPUxJn7wtfckq1yegzK/ylsayKcLIbp6ljnYAnsnahENoQPlIt/xU7xV4G7EPjcbt2sSVkmrrD1HL5D2+7Z1IqeWI6RP4ilOUF7RwERcM77Mehx3fkZGxXg4IVb6vfH/orxSes1Hz2yGcqzbZLTU1zLnHNyyO8x6K+oXyFIxDeIsbsl6fcLhxzx4Rl772mbXbjHfR2NHq1Ai8QyCKuL1E4+C2pWZOzHxrCS9iNl5uxYbU0Pb7haWunhLwOfkXfV77Qv/Xin7qEt4x8I28+lnFQOrkCICaKXzs6Ob0sf0E45phY3BOUoSdlR119ZSaRJ/7v1BRld3WeLUWzQqJ28NvNMi2pKbTiukRrkJ73zlRkjnbw+TMXM6nwVs8ZEl3wOuen9rO98sf0Lg3hcYr74ldPwwYGy9Mx4et0XQaf8C71PFrYBB9cvprjOJsM1i2NbmEV3ebbTJ4igGFKUe+2LDWf2A3YQxWo2W/JUHwwLWAP+1FER/RJ7tOP31Oc0e8qHXP7vS0QOONtOLbAj/Vdz2G/NvbJjAbQ32oJ3WMaU6oT3Wnb/sN3CADZmNPC0Cm5P5ZIUZ/arkCDCnblyT3wM47RcGP3c/eMF/S6/0GtRa6TDc218yVueGVHdtkIGyX7/UlZHp/9M7RWaqGVxRYOOTdMsOpKZUZegcmDCSq4LMB33b5bW5uP106BkGDzuh9p/Bilbykn8Fql43oePuPVg3Bs3fIScCyAeCbN3skSCrb00ohUoVCEkAJDxQUIpO8JLcJb7RGPptVEHqvfuf0LA0DEPjcSp19arsXBnTIfj1vvLbBk8emcviWsvsC96VfSbwyq5iYekKLUnRDGrwgxVk39gPmgoPBqlEEZXA3vKI1seCj/tSIGJE41jrogg8G5p8mp/CAsJHzJwQs0huXSouh9/7xncuzdURaGD0re/unmI04POnx2djC+dXxHODk8AaBB8Qqr0L+Oe2RFDV36XRJV6TCG1763UWbWu4q+pchBkIs4poQ+k9D73109q3QTlsP7ZpbdyR/Bj7DyI5XXr45USNwPIxXP6IJGIhgVNFaL3iCB672xiXj3whegCCposlMZq3WG9YR07cjHstFMQvZRn6V5X8XqD9t8qCT2XtWhxyrtK9Rjo5GTlM4ziBqqvzfmTya/0uvS4nqIaNPc0v/XajZB+Qe8b3a3/YIBYP6X323SOC/OzUb3kt9K2180wkYhOZH3rzBqKKrvDmR4X8AowXwFvU32Jz7p/Cu7jvz89+/ZE53OBZckSJM1IfdgIePKLwCuuZW8hcmAoIgZbPhFRpZGG3YhZ4Ycfjn2nzwLhZfrNlTzm7mvYxJ3qXB23CzuZX8hYmARYK62fBm/OcPiXqURl4PscjU7usxGoJlkOEpUGw07TPVwL+MV5YMPUoAyBAPistQ1JXoBBmqcQFAEjyhxTkYAPghFnpchgpAewSBgwpXIEM0TKhCfl1ZOUJBkAsVgCC0gwE5MM8EPMRCiGIUARChI1hocbGulDcioUUuOACxEIMiB2LoAfiioC4PH/FgYUR9aAkRYmBCLgwAoiADh6t1p3nEiAOFGrkACGJhrURpkAfA2Hxb0ij04e1LOzNUNa42Vg8OHa7NHDT/GsFKL05C9ah6kgIAZQ76VbJ8xQgtsItv9DWCq3qgzmSxQ2oUQZuoOEhEvh58nnFYBaHALwKjr5rqKqcYgBzhYR81YbWzq07xL/pWEw/1dCUA9MTHwuM+Ii6mMsNIsVzEkzJGWjmLA4DFjMyH8IlyphrYxCp9DWxI7fBqAFiPeF623GRA5ZMU2CitFAm5f5StEy6WUcxTz1D2wu8AdjHFvhpegG60glDgFGKZdXIjp658iQO2eZZ4gkoqxxsA4Bx7zlfBSmqnVgOvkFAfRmCe0AkAohMrJrds8pmGPgAejuj3csShjrndHzG7zXeaG5/XaW1nAQDMxfi09BOpV9IGAkB6QtfTKedSG6K0916Ukjdq2xHfX8iYf6ZeST2RlhYCILVb6oWUE907AmORPj3xSkru07OBjzsOOB6fl/4cAGzGRqbPvIQrAw5/EApQZvK/OuUl7EiSmbmu6tQ7Oz4vaQoAjGmXdrBz3lOLAGAwKNNnbqfc+G8SPABgzMKEvJ4H+maFf++ZJ8mL3d9zaCahAOZ63be1U95D/6E8s9/wyEkJlzJOvdcFAKY+lZzX9dTouvjaXwRm/Raf1+ddAPgirO+B+Lz4vLi8uLz4vPi8hM+68czfUrPpCwBjUXt9/+Iln/K9ni68TgHgohxRKOAB+A7HpNmvX+vCgecJAKeE+mjKWgLhnAusiuJ5QJJVGb5J8aiiS8SCJya+qOSJEMNoxIKxYKIvz1VEh/xZ/RNQJrgSdUPmIweAr1Dc4+LzNUFKry58AFAnXoqCnl+3QCL+N5Ov8/kyALjKy4vQhkQHAkBvDM44+2JVEErMX+z1wEtRkmDymTaEgR65UbKYvtOxG/QWkxNWGiW6AgAzMSl+z4LCmPaUCwKAAt+LUXyVqa4H5by8iLwwRSAAENntlBxv0uDCyF71RAvhBYDvAXyBomqP6iOo+wVBDiAcwS20Z96ZfmsoB4YzxwIiIJy1PwThAGICKHAlY9mZD0oGfXP/K1+DgiMcMJp943FVorQqbsG6oobcFPgINSFrFiuDzLWYayTmPwAApcQEPmMWTeY8HPArDgRfeKMmiAHH1dfOoFbUrsxngVSr6l80pab9tTmbDkJLzDVxQD+EidfNL40BYKqzXVECwtVHNmIa2gRQChMQdi7ujPmcEXNaRH9sObwAMM1JGkUIuna7Nk/LOgh300lwAFjUH1Aj2EQHry3tl/9AxSsz95rVEaNhy31l0wkXs+qJvQus7MbfoBN/1tzi3o5iTcedhAkExx2MeAQUOYJDz1cNtH1E4aXu9+qPOzzw/o5/Rl3uVxp/M8g8d5rbnIkt426NNTqtiQOw26EmxZZfF9imtFpYE+vusDDS54K2fqhsH4MSqKzmTwFvXFet0gyvr08VzJPBQ5hVHbewKrU0/tgL3fJPsWD84o9OVfm2O9zl35tN1uHF/4mkITnTDVyQtsTm7Cch8ztoA0wg8Aq3na4JKKLRecjFR000QFNq46zFVBWfVyIHD1ZLd6CfqJ0ktF41IQB3u2v+K3qPAHW5xNr+zDB9IrVaDkBEIGsXGcHkMJbuArwAh9nMb8/eyBCVZv3+/egay/qNcoITHz6tNs+vSi/AVBdvaiVwssunZ9/OnSMwUB71rvjS5CXSRC9abWOv5rghwdsWVMsC9gSXlz5ivfCmHTb/9KuIA0D5pUK7XnKj2m9eUOXdMVt7msywPmTAwBzcgEKkB4yotqrpP77H3q6OCbgi314+1/qYg15ycM0xIwVAmWKfphSvuwAvBTGdHnx1JkdDV4Rd4cbAKuSRCbliIjY31ASA1i1NduKS5OMIyho5yqMAYTw5Rs9WRttyFvD2zSnp5lXW+c3SsWYeDd2W5EsoKMwxeWwjTAgEe58rSvMqiX1hl81PJZIGDqROZ7WU4zPfPJ43SGJIXXzexkZNoSe5PvXlm45LcFdGrzy2+F2lT/ih/is4u01EDwz7XXTEPHoPDrmRZN54pQCzbHr5NB4X/1HRtYoljDbiBe7+3GEFz6f90f34J5ZOZ90M43FxH/96JGUctbFpeJRnfSPSUhCwIb8+XGJjZi3qdc2fx8V8vOWg6D5bmU2pOV7Vi1hKAQaCBnw1ide6GZiQlU9/89g42zJife9v5SUcCOB5aGJBE5HX7gq81eFV8C3JfHNVxSI7gycfsTsXLTL/7y1DnWcIwZCUMy+oBEF/jHj7XzEMxxmv7B98tCixOuz6wu7T/llcH12hNIVDwKbuy3c57Hpoi/e+pqgGgA29fh9tbcU2ITvaiNi9o1f94eDGqRMaJDNRgHfJ+o5F0JbrGkRRTpgB7U+nvXer1t5JiWjLl+w8CwAbgrKz0AS8rRZSyqbZ4BmC/7Vuv/3USkFhbKjR3FsG/fBu4I0PSkM9lf5v/ascfA4AX7D9TOgnAqrK2jsnknezblPSCNm1pH/pqxyPWFGirRsoKsZuhEIH2bX017TlvRxseDr/nFlcPPUbMEX7CAF7Jf9WfRk9RKUJr+YWzGhot1UP6l5eMdu0223rw0sAFuHbB6x9h7Ok1P9Hbe4AEIKBzE/P5PcFgr975aBZQaaEIAv9v/Q7pMfNWR9nhRDzy/A0JLz3y7mVDWWt+VDLDbFtjVgX/a7/kYX2pQAwqH5y894De/9cWSn3MoVt+KS2voyAC17ut+NzCxfrVjf8T+1q+i/AS2qJol1OxsLlyvkAiJ4oUFUXWclEFERhCU1J1VCg2ttwsPvlcbXVgZeSluzQEsCIKqKgpl/AlqR9JCvVkIr5I9sxBqIgVb5rHv36vPkNaIiCKMzBJ4gKClQ3bFobUQWF2QbKcKSaVUR+N37DGfOzWqKAsuFNwKskeDUV8pKJh+x21FvPbM6hAKGkhij8d4749AxNrusBqWLMPdBCgSpSP6NxpBqKurjtJiigcAy72eqyl11Dt4ep1lxfY1697OX1ZSlbYACAXDIMrMU1gHsfn0PvV3HZqBwLGq3ZeJUAwFkMAkevA0uxetuZS1X8Mnpd2auSHckwhddrVOaIirx/sxuIwXgbAGVeYz7gtFRZ93rPksFgaCEA8Mt4D/MFTMEetdnLh3zF7CYqRm/GigKGbktq/yPIEBiVh3+8sJQbD4BVszNYUW3RunLzNi+7k+3LUt51ACDryC7GxNSFl6HleAQCUgkA3HWMAI9xiGzV+lNbMYoNuIC6Q0RVqGp4UovzNjlv4RbAQVVujlpYJ/hUOFev0ebqTRcBFiwocAEQ4un6soWksO4/2mCldChP9LhEUYtt9c9KYAsAURh0J6tPspDiPdQdaTAhFzDij7oekEpUNsgD2/IGXGqQCbVw/4fB/g7UZSVD5TdHuBtiu5l0VzSHvwLVO7vcXfrbwiuEEALc7V/f/T+Rw9mku9im2wAAAABJRU5ErkJggg==" alt="АРТ-Инжиниринг" width="64" height="44">
+    </a>
+    <nav aria-label="Основная навигация">
+      <ul id="menu">
+        <li><a href="#about">О компании</a></li>
+        <li><a href="#dir">Направления</a></li>
+        <li><a href="#proc">Этапы работы</a></li>
+        <li><a href="#gov">Госзаказчикам</a></li>
+        <li><a href="#tz">Отправить ТЗ</a></li>
+      </ul>
+    </nav>
+    <a class="nav-phone" href="tel:+79177956789">+7 917 795-67-89</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ГЕРОЙ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">ООО «АРТ-Инжиниринг» · Уфа · Республика Башкортостан и регионы России</div>
+    <h1>Поставляем.<br>Производим.<br><em>Строим.</em></h1>
+    <div class="slogan">От винтика и болтика — до готового объекта</div>
+    <p class="lead">Комплексные поставки, быстровозводимые модульные здания, металлоконструкции, благоустройство и системы безопасности. Один ответственный подрядчик на весь проект — от технического задания до подписанных актов.</p>
+    <div class="hero-cta">
+      <a class="btn btn-orange" href="#tz">Отправить техническое задание</a>
+      <a class="btn btn-ghost" href="#dir">Направления работ</a>
+    </div>
+    <div class="dim" aria-hidden="true">
+      <div class="dim-line"></div>
+      <div class="dim-arrow-l"></div><div class="dim-arrow-r"></div>
+      <div class="dim-label">ПОЛНЫЙ ЦИКЛ · ПОСТАВКА → ПРОИЗВОДСТВО → ДОСТАВКА → МОНТАЖ → ДОКУМЕНТЫ</div>
+    </div>
+  </div>
+</section>
+
+<!-- БЕГУЩАЯ СТРОКА -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-item">Комплексные поставки</div>
+    <div class="marquee-item">Модульные здания</div>
+    <div class="marquee-item">Металлоконструкции</div>
+    <div class="marquee-item">Благоустройство</div>
+    <div class="marquee-item">Системы безопасности</div>
+    <div class="marquee-item">Госконтракты 44-ФЗ / 223-ФЗ</div>
+    <div class="marquee-item">Комплексные поставки</div>
+    <div class="marquee-item">Модульные здания</div>
+    <div class="marquee-item">Металлоконструкции</div>
+    <div class="marquee-item">Благоустройство</div>
+    <div class="marquee-item">Системы безопасности</div>
+    <div class="marquee-item">Госконтракты 44-ФЗ / 223-ФЗ</div>
+  </div>
+</div>
+
+<!-- ПОКАЗАТЕЛИ -->
+<section class="section" style="padding-bottom:0">
+  <div class="wrap reveal">
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-code">СПЕЦ. 01</span>
+        <div class="stat-num"><b><span class="count" data-target="1000">0</span>+</b></div>
+        <div class="stat-cap">Государственных контрактов заключено</div>
+      </div>
+      <div class="stat">
+        <span class="stat-code">СПЕЦ. 02</span>
+        <div class="stat-num"><span class="count" data-target="6">0</span></div>
+        <div class="stat-cap">Направлений работ полного цикла</div>
+      </div>
+      <div class="stat">
+        <span class="stat-code">СПЕЦ. 03</span>
+        <div class="stat-num"><span class="count" data-target="1">0</span></div>
+        <div class="stat-cap">Подрядчик на весь проект — от поставки до сдачи</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- О КОМПАНИИ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="eyebrow reveal">Раздел 01 — О компании</div>
+    <h2 class="reveal">Инженерная организация полного цикла</h2>
+    <div class="about" style="margin-top:32px">
+      <div class="about-text reveal">
+        <p><b>ООО «АРТ-Инжиниринг»</b> — компания из Уфы, работающая по Республике Башкортостан и другим регионам России. Мы объединяем в одном подрядчике то, что обычно разбито между несколькими: комплексные поставки, собственное производство, строительство, доставку, монтаж и документальное сопровождение.</p>
+        <p>Основная специализация — исполнение государственных и муниципальных контрактов. За время работы заключено <b>более 1000 государственных контрактов</b> по 44-ФЗ и 223-ФЗ: от поставки оборудования по спецификации до строительства модульных зданий под ключ.</p>
+        <p>Заказчик получает одного ответственного исполнителя на весь проект — и один комплект документов на выходе.</p>
+      </div>
+      <div class="about-card reveal">
+        <h3>Что это значит на практике</h3>
+        <ul>
+          <li>Читаем техническое задание как инженеры: подбираем продукцию и эквиваленты точно под требования</li>
+          <li>Производим металлоконструкции и модули, а не только перепродаём</li>
+          <li>Сами доставляем и монтируем — без разрывов ответственности между подрядчиками</li>
+          <li>Сдаём объект с полным комплектом документов для заказчика</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- НАПРАВЛЕНИЯ -->
+<section class="section" id="dir" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow reveal">Раздел 02 — Направления</div>
+    <h2 class="reveal">Шесть направлений.<br>Одна ответственность.</h2>
+
+    <div class="dir-grid">
+      <article class="dir-card reveal">
+        <div class="dir-head">
+          <span class="dir-code">АИ / 01</span>
+          <div class="dir-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><rect x="8" y="16" width="32" height="24"/><path d="M8 24h32M20 16v24M8 16l6-8h20l6 8"/></svg>
+          </div>
+        </div>
+        <h3>Комплексные поставки</h3>
+        <p>Поставка товаров, материалов и оборудования по спецификации заказчика. Подбор продукции и эквивалентов строго по техническому заданию.</p>
+        <div class="dir-spec">Спецификации · подбор эквивалентов · логистика до объекта</div>
+      </article>
+
+      <article class="dir-card reveal">
+        <div class="dir-head">
+          <span class="dir-code">АИ / 02</span>
+          <div class="dir-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><rect x="6" y="18" width="16" height="12"/><rect x="26" y="18" width="16" height="12"/><rect x="16" y="32" width="16" height="10"/><path d="M6 14h36"/></svg>
+          </div>
+        </div>
+        <h3>Модульные здания</h3>
+        <p>Строительство быстровозводимых модульных зданий: дома культуры, детские корпуса, банные комплексы, КПП, посты охраны, административные здания.</p>
+        <div class="dir-spec">Проект · производство · монтаж · инженерные системы</div>
+      </article>
+
+      <article class="dir-card reveal">
+        <div class="dir-head">
+          <span class="dir-code">АИ / 03</span>
+          <div class="dir-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M8 40L24 8l16 32M14 30h20M18 22h12M8 40h32"/></svg>
+          </div>
+        </div>
+        <h3>Металлоконструкции</h3>
+        <p>Изготовление и монтаж: каркасы, навесы, лестницы, пандусы, ограждения, террасы, флагштоки и нестандартные изделия по чертежам.</p>
+        <div class="dir-spec">Резка · сварка · окраска · доставка · монтаж</div>
+      </article>
+
+      <article class="dir-card reveal">
+        <div class="dir-head">
+          <span class="dir-code">АИ / 04</span>
+          <div class="dir-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M6 40h36M10 40V26l8-6 8 6v14M30 40V18l6-4 6 4v22"/><circle cx="18" cy="33" r="2.4"/></svg>
+          </div>
+        </div>
+        <h3>Благоустройство территорий</h3>
+        <p>Площадки, брусчатка, ограждения, навесы, освещение и элементы доступной среды. Комплексное благоустройство под требования контракта.</p>
+        <div class="dir-spec">Покрытия · МАФ · освещение · доступная среда</div>
+      </article>
+
+      <article class="dir-card reveal">
+        <div class="dir-head">
+          <span class="dir-code">АИ / 05</span>
+          <div class="dir-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 6l14 6v10c0 10-6 17-14 20-8-3-14-10-14-20V12l14-6z"/><path d="M17 24l5 5 9-10"/></svg>
+          </div>
+        </div>
+        <h3>Системы безопасности</h3>
+        <p>Турникеты, металлодетекторы, видеонаблюдение, СКУД, пожарная и охранная сигнализация. Поставка, монтаж и пусконаладка.</p>
+        <div class="dir-spec">СКУД · видеонаблюдение · сигнализация · пусконаладка</div>
+      </article>
+
+      <article class="dir-card reveal">
+        <div class="dir-head">
+          <span class="dir-code">АИ / 06</span>
+          <div class="dir-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M8 12h32v22H8zM8 34l-2 6h36l-2-6M16 20h16M16 26h10"/></svg>
+          </div>
+        </div>
+        <h3>Оснащение учреждений</h3>
+        <p>Комплексное оснащение школ, лагерей, учреждений культуры и других государственных объектов — мебель, техника, оборудование по спецификации.</p>
+        <div class="dir-spec">Школы · лагеря · учреждения культуры · госорганизации</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ПРЕИМУЩЕСТВА -->
+<section class="section" id="adv" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow reveal">Раздел 03 — Преимущества</div>
+    <h2 class="reveal">Почему заказчики возвращаются</h2>
+    <div class="adv-grid reveal">
+      <div class="adv"><div class="adv-num">П-01</div><h4>1000+ исполненных госконтрактов</h4><p>Опыт, подтверждённый реестром контрактов, а не словами.</p></div>
+      <div class="adv"><div class="adv-num">П-02</div><h4>44-ФЗ и 223-ФЗ</h4><p>Знаем процедуры, сроки и требования закупочного законодательства.</p></div>
+      <div class="adv"><div class="adv-num">П-03</div><h4>Полный цикл реализации</h4><p>Поставка, производство, доставка, монтаж — в одном контракте.</p></div>
+      <div class="adv"><div class="adv-num">П-04</div><h4>Один подрядчик на весь проект</h4><p>Никаких разрывов ответственности между исполнителями.</p></div>
+      <div class="adv"><div class="adv-num">П-05</div><h4>Точное соответствие ТЗ</h4><p>Работаем строго по техническому заданию и спецификации.</p></div>
+      <div class="adv"><div class="adv-num">П-06</div><h4>Подбор эквивалентов</h4><p>Находим аналоги, соответствующие требованиям документации.</p></div>
+      <div class="adv"><div class="adv-num">П-07</div><h4>Контроль сроков и качества</h4><p>Собственное производство позволяет держать график.</p></div>
+      <div class="adv"><div class="adv-num">П-08</div><h4>Нестандартные задачи</h4><p>Изделия и решения, которых нет в каталогах.</p></div>
+      <div class="adv"><div class="adv-num">П-09</div><h4>Своя логистика и монтаж</h4><p>Доставка и сборка на объекте силами компании.</p></div>
+      <div class="adv"><div class="adv-num">П-10</div><h4>Полный комплект документов</h4><p>Исполнительная документация и акты — в срок и без ошибок.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ЭТАПЫ -->
+<section class="section dark" id="proc">
+  <div class="wrap">
+    <div class="eyebrow reveal">Раздел 04 — Этапы работы</div>
+    <h2 class="reveal">Пять этапов —<br>один подрядчик</h2>
+    <div class="proc">
+      <div class="proc-step reveal">
+        <h4>Техническое задание</h4>
+        <p>Изучаем ТЗ, смету и чертежи. Подбираем продукцию и эквиваленты, готовим предложение с ценой и сроками.</p>
+      </div>
+      <div class="proc-step reveal">
+        <h4>Договор и график</h4>
+        <p>Заключаем контракт, согласовываем график производства работ и поставок.</p>
+      </div>
+      <div class="proc-step reveal">
+        <h4>Производство и поставка</h4>
+        <p>Изготавливаем конструкции и модули, комплектуем поставку по спецификации.</p>
+      </div>
+      <div class="proc-step reveal">
+        <h4>Доставка и монтаж</h4>
+        <p>Доставляем на объект и монтируем собственными бригадами, подключаем инженерные системы.</p>
+      </div>
+      <div class="proc-step reveal">
+        <h4>Сдача и документы</h4>
+        <p>Исполнительная документация, акты, полный комплект документов для заказчика.</p>
+      </div>
+    </div>
+    <div class="bolt-note reveal">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6l5 3v6l-5 3-5-3V9l5-3z"/><path d="M24 18v24M20 22h8M20 27h8M20 32h8M20 37h8"/></svg>
+      <p><b>«От винтика и болтика до готового объекта»</b> — это не фигура речи. Мы сами комплектуем каждый проект: от метизов и крепежа до готовых зданий с инженерными системами. Ничего не теряется между подрядчиками, потому что подрядчик один.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ТИПОВЫЕ ПРОЕКТЫ -->
+<section class="section" id="proj">
+  <div class="wrap">
+    <div class="eyebrow reveal">Раздел 05 — Типовые проекты</div>
+    <h2 class="reveal">Что мы строим и поставляем</h2>
+    <div class="proj-grid">
+      <article class="proj reveal"><span class="proj-code">ТП-01</span><h4>Модульный дом культуры</h4><span class="proj-tag">Модульные здания</span></article>
+      <article class="proj reveal"><span class="proj-code">ТП-02</span><h4>Детский модульный корпус</h4><span class="proj-tag">Модульные здания</span></article>
+      <article class="proj reveal"><span class="proj-code">ТП-03</span><h4>Банный комплекс</h4><span class="proj-tag">Модульные здания</span></article>
+      <article class="proj reveal"><span class="proj-code">ТП-04</span><h4>Контрольно-пропускной пункт</h4><span class="proj-tag">Модульные здания</span></article>
+      <article class="proj reveal"><span class="proj-code">ТП-05</span><h4>Административное модульное здание</h4><span class="proj-tag">Модульные здания</span></article>
+      <article class="proj reveal"><span class="proj-code">ТП-06</span><h4>Благоустройство территории</h4><span class="proj-tag">Благоустройство</span></article>
+      <article class="proj reveal"><span class="proj-code">ТП-07</span><h4>Металлический навес</h4><span class="proj-tag">Металлоконструкции</span></article>
+      <article class="proj reveal"><span class="proj-code">ТП-08</span><h4>Пандус</h4><span class="proj-tag">Металлоконструкции</span></article>
+      <article class="proj reveal"><span class="proj-code">ТП-09</span><h4>Ограждение</h4><span class="proj-tag">Металлоконструкции</span></article>
+      <article class="proj reveal"><span class="proj-code">ТП-10</span><h4>Система контроля доступа</h4><span class="proj-tag">Безопасность</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- ГОСЗАКАЗЧИКАМ -->
+<section class="section" id="gov" style="padding-top:0">
+  <div class="wrap gov">
+    <div>
+      <div class="eyebrow reveal">Раздел 06 — Государственным заказчикам</div>
+      <h2 class="reveal">Надёжный исполнитель госконтрактов</h2>
+      <p class="lead reveal" style="margin-bottom:28px">Работа с государственными и муниципальными заказчиками — наша основная специализация. Мы знаем требования 44-ФЗ и 223-ФЗ не по учебникам.</p>
+      <ul class="gov-list">
+        <li class="reveal"><span class="gov-check">[✓]</span><div><b>Опыт исполнения — подтверждён</b><span>Более 1000 заключённых государственных контрактов: поставки, строительство модульных зданий, металлоконструкции, благоустройство, системы безопасности.</span></div></li>
+        <li class="reveal"><span class="gov-check">[✓]</span><div><b>Точное соответствие документации</b><span>Работаем строго по техническому заданию: характеристики, эквиваленты, комплектность — всё сверяется с требованиями закупки.</span></div></li>
+        <li class="reveal"><span class="gov-check">[✓]</span><div><b>Соблюдение сроков контракта</b><span>Собственное производство и монтажные бригады позволяют держать график без сюрпризов.</span></div></li>
+        <li class="reveal"><span class="gov-check">[✓]</span><div><b>Полный комплект документов</b><span>Исполнительная документация, акты, отчётность — готовим и сдаём в срок, без доработок.</span></div></li>
+      </ul>
+    </div>
+    <div class="gov-big reveal">
+      <div class="n">1000+</div>
+      <div class="t">Государственных контрактов<br>заключено в работу</div>
+      <hr>
+      <p>Дома культуры, детские корпуса, школы, дворы и инфраструктурные объекты в Башкортостане и других регионах России. Репутация, которую проверяет каждый новый контракт.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ФОРМА ТЗ -->
+<section class="section form-sec" id="tz">
+  <div class="wrap form-grid">
+    <div class="form-info reveal">
+      <div class="eyebrow">Раздел 07 — Отправить техническое задание</div>
+      <h2>Есть объект?<br>Посчитаем.</h2>
+      <p>Пришлите техническое задание, спецификацию, смету или чертежи — подготовим предложение с ценой и сроками. Или просто опишите задачу своими словами.</p>
+      <div class="form-contacts">
+        <a class="contact-btn ph" href="tel:+79177956789">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+          +7 917 795-67-89
+        </a>
+        <a class="contact-btn wa" href="https://wa.me/79177956789" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.6.8 1.9.8 2 .1.1.1.3 0 .5l-.3.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.8-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .2 0 .7-.2 1.3z"/></svg>
+          Написать в WhatsApp
+        </a>
+        <a class="contact-btn tg" href="https://t.me/+79177956789" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M21.9 4.6l-3 14.2c-.2 1-.8 1.2-1.6.8l-4.6-3.4-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.6L18.3 6c.4-.3-.1-.5-.6-.2L7.5 12.2 3 10.8c-1-.3-1-1 .2-1.4l17.4-6.7c.8-.3 1.5.2 1.3 1.9z"/></svg>
+          Написать в Telegram
+        </a>
+      </div>
+    </div>
+    <form class="reveal" id="tzForm" action="https://formsubmit.co/info@arting.su" method="POST" enctype="multipart/form-data">
+      <div class="form-title"><span>Форма № АИ-ТЗ</span><span>arting.su</span></div>
+      <input type="hidden" name="_subject" value="Новое ТЗ с сайта arting.su">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="field">
+        <label for="f-name">Ваше имя *</label>
+        <input id="f-name" name="Имя" type="text" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="f-phone">Телефон *</label>
+        <input id="f-phone" name="Телефон" type="tel" required autocomplete="tel" placeholder="+7">
+      </div>
+      <div class="field">
+        <label for="f-org">Организация</label>
+        <input id="f-org" name="Организация" type="text" autocomplete="organization">
+      </div>
+      <div class="field">
+        <label for="f-msg">Описание задачи</label>
+        <textarea id="f-msg" name="Сообщение" placeholder="Что нужно поставить, изготовить или построить?"></textarea>
+      </div>
+      <div class="field">
+        <label class="file-field" for="f-file">
+          <b>Прикрепить файлы</b> — спецификацию, смету или чертежи<br>
+          <span style="font-size:12px">PDF, DOC, XLS, изображения · до 10 МБ</span>
+          <input id="f-file" name="Файлы" type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png,.dwg">
+        </label>
+        <div class="file-list" id="fileList"></div>
+      </div>
+      <button class="btn btn-orange" type="submit">Отправить заявку</button>
+      <div class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer id="contacts">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img class="foot-logo-img" src="data:image/png;base64,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" alt="АРТ-Инжиниринг" width="70" height="48">
+        <p style="margin-top:16px;font-size:14.5px;max-width:340px">Поставляем. Производим. Строим. От винтика и болтика до готового объекта. Уфа · Республика Башкортостан · регионы России.</p>
+      </div>
+      <div>
+        <h5>Навигация</h5>
+        <ul>
+          <li><a href="#about">О компании</a></li>
+          <li><a href="#dir">Направления</a></li>
+          <li><a href="#adv">Преимущества</a></li>
+          <li><a href="#proc">Этапы работы</a></li>
+          <li><a href="#gov">Госзаказчикам</a></li>
+          <li><a href="#tz">Отправить ТЗ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Контакты</h5>
+        <ul>
+          <li><a href="tel:+79177956789">+7 917 795-67-89</a></li>
+          <li><a href="https://wa.me/79177956789" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://t.me/+79177956789" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="mailto:info@arting.su">info@arting.su</a></li>
+          <li>Руководитель — Зарипов Артур Маратович</li>
+          <li>г. Уфа, Республика Башкортостан</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 ООО «АРТ-Инжиниринг» · arting.su</span>
+      <span>ИНН / ОГРН — укажите реквизиты</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// мобильное меню
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.addEventListener('click',()=>{
+  const open=menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded',open);
+});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+
+// появление секций
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// анимация цифр
+const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const cio=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const el=e.target,target=+el.dataset.target;
+    cio.unobserve(el);
+    if(reduce||target<10){el.textContent=target;return}
+    const dur=1400,t0=performance.now();
+    (function tick(t){
+      const p=Math.min((t-t0)/dur,1);
+      el.textContent=Math.round(target*(1-Math.pow(1-p,3)));
+      if(p<1)requestAnimationFrame(tick);
+    })(t0);
+  });
+},{threshold:.5});
+document.querySelectorAll('.count').forEach(el=>cio.observe(el));
+
+// список прикреплённых файлов
+const fInput=document.getElementById('f-file'),fList=document.getElementById('fileList');
+fInput.addEventListener('change',()=>{
+  fList.innerHTML=[...fInput.files].map(f=>'▪ '+f.name+' ('+(f.size/1048576).toFixed(1)+' МБ)').join('<br>');
+});
+</script>
+</body>
+</html>
